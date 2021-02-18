@@ -1,5 +1,6 @@
 #!/bin/bash
 
+mkdir -p data
 mkdir -p data/phase_I
 curl -L https://www.dropbox.com/s/6whin1yymthck77/video_0.mp4?dl=1 --output data/phase_I/video_0.mp4
 curl -L https://www.dropbox.com/s/76m7f91y5x0u0qb/video_1.mp4?dl=1 --output data/phase_I/video_1.mp4
