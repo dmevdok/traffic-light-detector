@@ -59,9 +59,11 @@ git checkout -b yournickname/short_task_description
 
 4) commit your changes
 
+look for an issue number of your task
+
 ```
 git add .
-git commit -m ""
+git commit -m "close #ISSUENUMBER"
 ```
 
 (you can do it multiple times, if you've forgotten smth or made a mistake)
