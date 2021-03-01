@@ -74,7 +74,7 @@ git commit -m "close #ISSUENUMBER"
 git push origin yournickname/short_task_description
 ```
 
-6) make a pull request from `yournickname/short_task_description` to `master`
+6) make a pull request from `yournickname/short_task_description` to `master`, **write `closes #ISSUENUMBER` to your pull request description**
 
 wait for approval from the other team member
 
