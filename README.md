@@ -31,6 +31,8 @@ Make sure you can use `ffmpeg` inside `tldetector` environment
 
 # Inference
 
+don't forget to `make downloads` first
+
 ### In Google Colab
 
 You can easily inference traffic light detection in google colab -- just copy it to your google drive and run `experiments/the_pipeline.ipynb` notebook
@@ -51,7 +53,7 @@ Please use Mac or Linux, WSL is not tested
 docker run -v `pwd`/data:/data -it tldetector PATH_TO_VIDEO`
 ```
 
-where PATH_TO_VIDEO is relative to ./data folder (eg 'data/phase_I/video_0.mp4')
+where `PATH_TO_VIDEO` is relative to `./data` folder (eg. `"data/phase_I/video_0.mp4"`)
 
 # Developing
 

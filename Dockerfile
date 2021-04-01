@@ -10,6 +10,8 @@ RUN mkdir -p /root/.cache/torch/hub && curl https://github.com/ultralytics/yolov
 
 ADD pretrained /pretrained
 
+ADD yolov5 /yolov5
+
 COPY test.py /test.py
 
 WORKDIR /
