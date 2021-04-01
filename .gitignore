@@ -1,7 +1,5 @@
 /data/*
-/models/*
 /pretrained/*
-/experiments/*.pt
 
 .ipynb_checkpoints
 .DS_Store
