@@ -21,27 +21,39 @@ Make sure you can use `ffmpeg` inside `tldetector` environment
 
 ### Use `make`:
 
-`make data` to download data
-
-`make pretrained` to download pretrained models
-
-`make train` to train
-
-`make test` to test
+`make downloads` to download data & trained models
 
 `make docker` to build docker image
 
 ### Cleanup:
 
-`make clean-data` to remove data
+`make clean` to remove data & trained models
 
-`make clean-pretrained` to remove **pre**trained models
+# Inference
 
-`make clean-models` to remove trained models
+### In Google Colab
 
-`make clean-logs` to clean tensorboard logs
+You can easily inference traffic light detection in google colab -- just copy it to your google drive and run `experiments/the_pipeline.ipynb` notebook
 
-# Making changes
+### On your PC
+
+Switch to `tldetector` conda environment and run `python test.py PATH_TO_VIDEO`
+
+Don't forget to add ffmpeg's binary folder to your $PATH (eg. when using homebrew)
+
+Please use Mac or Linux, WSL is not tested
+
+### In docker
+
+`make docker` to build docker image `tldetector`
+
+```
+docker run -v `pwd`/data:/data -it tldetector PATH_TO_VIDEO`
+```
+
+where PATH_TO_VIDEO is relative to ./data folder (eg 'data/phase_I/video_0.mp4')
+
+# Developing
 
 1) choose a task from ToDo https://github.com/dMeVdok/traffic-light-detector/projects/1 and move it to "In progress"
 

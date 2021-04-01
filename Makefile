@@ -2,34 +2,17 @@ all: data train test docker
 
 .PHONY : all
 
-data::
+downloads::
 	bash utils/download_data.sh
-
-train::
-	echo "No train script yet :("
-
-test::
-	echo "No test script yet :("
+	bash utils/download_pretrained.sh
 
 docker::
-	docker build . -t traffic-light-detector
+	docker build . -t tldetector
 
-clean-data:
+clean:
 	rm -rf data
 	mkdir data
-	touch data/.gitignore
-
-clean-logs:
-	rm -rf logs
-	mkdir logs
-	touch logs/.gitignore
-
-clean-models:
-	rm -rf models
-	mkdir models
-	touch models/.gitignore
-
-clean-pretrained:
 	rm -rf pretrained
 	mkdir pretrained
+	touch data/.gitignore
 	touch pretrained/.gitignore
