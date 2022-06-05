@@ -1,3 +1,5 @@
+[this is a study project from my master's: a YOLOv5-based object detection and image classification of the traffic lights (i.e. for autonomous driving)]
+
 # Running
 
 1) Clone the repo:
